@@ -1,0 +1,431 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#head_fix {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+.container_hd {
+  background-color: black;
+  color: white;
+}
+
+.nav_header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav_header .all_ul {
+  display: flex;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.nav_header .all_ul a {
+  text-decoration: none;
+  color: white;
+  padding: 12px 20px;
+}
+
+.nav_header .all_ul a:hover {
+  color: black;
+  background-color: #c6c6c6;
+}
+
+.all_ul li {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+}
+
+.for_more {
+  position: absolute;
+  background-color: white;
+  color: black;
+  top: 100%;
+  left: 0%;
+  display: none;
+  list-style: none;
+}
+
+.for_more li {
+  text-transform: none;
+  display: block;
+  padding: 8px;
+}
+
+.hd_more {
+  position: relative;
+  padding: 11px 18px;
+}
+
+.hd_more:hover {
+  color: black;
+  background-color: #c6c6c6;
+}
+
+.hd_more:hover .for_more {
+  display: block !important;
+}
+
+.li-design:hover {
+  background-color: #c6c6c6;
+  color: black;
+}
+
+.search-i {
+  float: right !important;
+  padding: 12px 24px;
+}
+
+.search-i:hover {
+  background-color: red;
+}
+
+.img-first {
+  width: 100%;
+}
+
+.h2-first {
+  text-align: center;
+  font-size: 30px;
+}
+
+.span-first {
+  text-align: center;
+  font-style: italic;
+  font-size: 15px;
+  opacity: 0.6;
+}
+
+.p-first {
+  text-align: justify;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-size: 14.8px;
+  line-height: 1.5;
+}
+
+.section-middle-first {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px 16px;
+}
+
+.section-middle-second {
+  display: flex;
+  width: 100%;
+  padding: 25px 0px;
+  text-align: center;
+}
+
+.city img {
+  width: 60%;
+  margin: 0 0 16px;
+}
+
+.city p {
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+
+.section-middle-third {
+  color: white;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-middle-fourth {
+  text-align: center;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-weight: 400;
+  margin: 10px 0;
+  font-size: 30px;
+  padding-top: 64px !important;
+  padding-bottom: 20px;
+}
+
+.section-middle-third-p {
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.5;
+  opacity: 0.6;
+  font-style: italic;
+}
+
+.section-middle-ul {
+  border: 1px solid #c6c6c6;
+  background-color: white;
+  list-style: none;
+  color: #757575;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.section-middle-list {
+  color: #fff !important;
+  background-color: #f44336 !important;
+  margin-left: 16px !important;
+  background-color: #000;
+  color: #fff;
+  display: inline-block;
+  padding-left: 8px;
+  padding-right: 8px;
+  text-align: center;
+}
+
+.section-middle-ul li {
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+  padding: 8px 16px;
+  list-style-type: none;
+}
+
+.section-middle-fifth {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  float: right;
+  border-radius: 50%;
+  margin: 0 16px 0 0;
+  padding: 0px 8px;
+}
+
+.section-middle-sixth {
+  display: flex;
+}
+
+.section-middle-sixth img {
+  width: 100%;
+  vertical-align: middle;
+  border-style: none;
+}
+
+b {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.design-b {
+  margin-top: -20px;
+  padding: 40px 16px 16px 12px;
+  margin-bottom: 60%;
+  background-color: white;
+  color: #000;
+}
+
+.design-p {
+  font-size: 15px;
+  color: #000;
+  line-height: 1.5em;
+  margin-top: 15px;
+  font-family: "Lato", sans-serif;
+  margin: 15px 0px;
+}
+
+.design-different-div {
+  padding: 0px 8px;
+}
+
+.time {
+  opacity: 0.6;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #c6c6c6;
+  color: #000;
+  cursor: pointer;
+}
+
+button {
+  font-size: 15px;
+  background-color: #000;
+  color: white;
+  margin: 0px 0px 16px;
+  padding: 8px 16px;
+  border: none;
+}
+
+.contact {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 64px 16px;
+}
+
+.h2-last {
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-weight: 400;
+  margin: 10px 0;
+  letter-spacing: 4px;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 70px;
+}
+
+.p-last {
+  font-size: 15px;
+  line-height: 1.5;
+  opacity: 0.6;
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+.last-main-div {
+  display: flex;
+  width: 100%;
+  padding: 32px 0px;
+}
+
+.last-main-second-div {
+  width: 50%;
+  font-size: 18px;
+  line-height: 1.2em;
+}
+
+.input-part {
+  width: 50%;
+}
+
+.input-name-email {
+  width: 50%;
+  padding: 0px 8px;
+}
+
+.name-email-style {
+  border: 1px solid #ccc;
+  padding: 8px;
+  width: 100%;
+}
+
+.input-message {
+  width: 100%;
+}
+
+.button-send-div {
+  display: flex;
+  justify-content: flex-end;
+  margin: 16px 0px;
+}
+
+.send-btn {
+  padding: 8px 16px;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  color: white;
+  text-transform: uppercase;
+  background-color: black;
+  border: none;
+}
+
+.map-img {
+  background-image: url(./images/map.jpg);
+  filter: grayscale(50%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  color: white;
+  position: relative;
+  height: 855px;
+}
+
+footer {
+  padding: 64px 16px;
+  opacity: 0.6;
+}
+
+.icons-footer {
+  text-align: center;
+  font-size: 24px;
+}
+
+.icon-width {
+  width: 22px;
+}
+
+.footer-span {
+  margin: 15px 0px;
+  font-size: 15px;
+}
+
+.icon-width:hover {
+  opacity: 0.6;
+}
+
+.footer-span a {
+  color: black;
+}
+
+.countainer-slide {
+animation-name: photos;
+animation-duration: 10s;
+animation-iteration-count: infinite;
+background-size: cover;
+height: 100vh;
+}
+
+/* .slider-for-all{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: white;
+}
+
+.bg-LG{
+background-image: url(./images/la.jpg);
+background-size: cover;
+}
+
+.bg-NY{
+background-image: url(./images/ny.jpg);
+background-size: cover;
+}
+
+.bg-CG{
+background-image: url(./images/chicago.jpg);
+background-size: cover;
+}
+
+
+.first-slide{
+animation-name: photos;
+}
+
+.second-slide{
+  
+}
+
+.third-slide{
+   */
+
+@keyframes photos {
+  0% {
+    background-image: url(./images/la.jpg);
+  }
+  50% {
+    background-image: url(./images/ny.jpg);
+  }
+  100% {
+    background-image: url(./images/chicago.jpg);
+  }
+}
