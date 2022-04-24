@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 5000px;
+  height: 5000px;
+}
+
+.rectangular-1 {
+  width: 50px;
+  height: 50px;
+  left: 0;
+  top: 0;
+  display: inline-block;
+  background-color: aquamarine;
+  transition: 2s;
+}
+
+.rectangular-1:hover {
+  width: 500px;
+  height: 500px;
+  background-color: blue;
+  cursor: pointer;
+  -webkit-transition: background-color 2s ease-all;
+  -moz-transition: background-color 2s ease-all;
+  -o-transition: background-color 2s ease-all;
+  transition: background-color 2s ease-all;
+}
+
+.train-1 {
+  left: 0;
+  display: inline-block;
+  transition: 2s;
+}
+
+.train-1:hover {
+  width: 10%;
+  cursor: pointer;
+  transform: translateX(300px);
+}
+
+.train-2 {
+  width: 50px;
+  height: 50px;
+  left: 0;
+  display: inline-block;
+  transition: 5s ;
+}
+
+.train-2:hover {
+  cursor: pointer;
+  animation-name: animation;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+  transition-timing-function: 2s;
+}
+
+@keyframes animation {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(3);
+  }
+
+  75% {
+    /* transform: scale(3); */
+  }
+
+  100% {
+    /* transform: scale(-1); */
+  }
+}
+
+.train-3 {
+  width: 400px;
+  height: 100px;
+  padding-top: 40px;
+  text-align: center;
+  background-color: aquamarine;
+  color: black;
+  transition: transform 2s linear;
+  transform: translateX(-330px);
+}
+
+.train-3:hover {
+  transform: translateX(10px);
+}
+
+.rectangular-2 {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  background-color: aquamarine;
+  transition: 2s;
+  position: relative;
+  left: 0;
+  top: 0;
+  animation-name: rectangular-2;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rectangular-2 {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  25% {
+    top: 0;
+    left: 400px;
+  }
+  50% {
+    top: 400px;
+    left: 400px;
+  }
+  75% {
+    top: 400px;
+    left: 0;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
+
+.text-1 {
+  width: 100px;
+  height: 50px;
+  background-color: green;
+  transform: scale(0);
+  transition: 0.3s;
+}
+
+input:focus + .text-1 {
+  transform: scale(1);
+}
