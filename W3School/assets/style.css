@@ -22,6 +22,7 @@ body {
 .nav_header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .nav_header .all_ul {
@@ -119,7 +120,7 @@ body {
 }
 
 .section-middle-first {
-  width: 800px;
+  
   margin-left: auto;
   margin-right: auto;
   padding: 40px 16px;
@@ -145,7 +146,7 @@ body {
 
 .section-middle-third {
   color: white;
-  width: 800px;
+  
   margin-left: auto;
   margin-right: auto;
 }
@@ -238,10 +239,9 @@ b {
   margin: 15px 0px;
 }
 
-.design-different-div {
-  padding: 0px 8px;
+.design-different-div:nth-child(1),.design-different-div:nth-child(2){
+padding-right: 10px;
 }
-
 .time {
   opacity: 0.6;
   margin-top: 10px;
@@ -263,7 +263,7 @@ button {
 }
 
 .contact {
-  width: 800px;
+  
   margin-left: auto;
   margin-right: auto;
   padding: 64px 16px;
@@ -427,5 +427,59 @@ animation-name: photos;
   }
   100% {
     background-image: url(./images/chicago.jpg);
+  }
+}
+
+.nav_media_bar{
+  display: none !important;
+}
+
+
+.for_media_the_band{
+  width: 800px;
+  margin: auto;
+}
+@media (max-width:800px){
+  .for_media_the_band{
+    width:100%;
+  }
+}
+
+
+.section-middle-second , .section-middle-ul,.section-middle-sixth,.contact{
+  width: 800px;
+  margin: auto;
+  
+}
+@media (max-width:800px){
+  .section-middle-second,.section-middle-ul,.section-middle-sixth,.contact{
+    width:100%;
+  }
+}
+
+
+@media (max-width:600px){
+  .for_medi_nav{
+    display: none !important;
+  }
+  .nav_media_bar{
+    display: block !important;
+  }
+}
+@media (max-width:600px){
+  .section-middle-second{
+    flex-direction: column;
+  }
+  .city{
+    width: 100%;
+  }
+}
+
+@media (max-width:600px){
+  .section-middle-sixth{
+    flex-direction: column;
+  }
+  .city{
+    width: 100%;
   }
 }
