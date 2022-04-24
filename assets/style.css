@@ -203,7 +203,12 @@ body {
   float: right;
   border-radius: 50%;
   margin: 0 16px 0 0;
-  padding: 0px 8px;
+  height: 24px;
+  width: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4px;
 }
 
 .section-middle-sixth {
@@ -238,10 +243,16 @@ b {
   margin: 15px 0px;
 }
 
-.design-different-div:nth-child(1),
 .design-different-div:nth-child(2) {
   padding-right: 10px;
+  padding-left: 10px;
 }
+
+.section-middle-third {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
 .time {
   opacity: 0.6;
   margin-top: 10px;
@@ -303,6 +314,11 @@ button {
   width: 50%;
 }
 
+.input-part-2 {
+  display: flex;
+  margin: 0px -8px 8px -8px;
+}
+
 .input-name-email {
   width: 50%;
   padding: 0px 8px;
@@ -335,16 +351,12 @@ button {
 }
 
 .map-img {
-  background-image: url(./images/map.jpg);
   filter: grayscale(50%);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
   color: white;
   position: relative;
-  height: 855px;
 }
 
 footer {
@@ -443,6 +455,15 @@ animation-name: photos;
   color: #000;
 }
 
+@media (max-width: 600px) {
+  .design-different-div:nth-child(1),
+  .design-different-div:nth-child(2),
+  .design-different-div:nth-child(3) {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}
+
 .for_media_the_band {
   width: 800px;
   margin: auto;
@@ -450,6 +471,12 @@ animation-name: photos;
 @media (max-width: 800px) {
   .for_media_the_band {
     width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .input-message {
+    margin-top: 10px;
   }
 }
 
@@ -470,6 +497,20 @@ animation-name: photos;
 }
 
 @media (max-width: 600px) {
+  .design-b {
+    margin-bottom: 8%;
+  }
+}
+
+@media (max-width: 600px) {
+  .input-part-2 {
+    flex-direction: column;
+    width: 100%;
+    margin: unset;
+  }
+}
+
+@media (max-width: 600px) {
   .for_medi_nav {
     display: none !important;
   }
@@ -486,38 +527,45 @@ animation-name: photos;
   }
 }
 
-@media (max-width:600px){
-  .section-middle-sixth{
+@media (max-width: 600px) {
+  .section-middle-sixth {
     flex-direction: column;
   }
 }
 
-@media (max-width:600px){
-  .countainer-slide{
-    background-size:cover;
+@media (max-width: 600px) {
+  .countainer-slide {
+    background-size: cover;
     width: 100%;
     height: 100vh;
   }
 }
 
-@media (max-width:600px){
-  .last-main-div{
+@media (max-width: 600px) {
+  .last-main-div {
     flex-direction: column;
   }
-  .input-part,.input-name-email{
+  .input-part,
+  .input-name-email {
     display: block;
     width: 100%;
+    padding: unset;
   }
-  .last-main-second-div{
+  .last-main-second-div {
     display: block !important;
   }
 }
 
-@media (max-width:600px){
-  .map-img{
+@media (max-width: 600px) {
+  .input-part {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .map-img {
     display: flex;
     justify-content: center;
     background-size: cover;
-    flex-direction: column;
   }
 }
